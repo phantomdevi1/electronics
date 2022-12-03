@@ -25,3 +25,18 @@ dots[index].className += " active";
 
 window.addEventListener("onload", show_slide(index));
  
+function readmore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readmore_btn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Читать полностью";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Скрыть";
+    moreText.style.display = "inline";
+  }
+}

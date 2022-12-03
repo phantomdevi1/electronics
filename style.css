@@ -549,6 +549,7 @@ hr {
 
 .vse_harakter a:hover {
   text-decoration: underline;
+  font-weight: 500;
 }
 
 .buy {
@@ -560,17 +561,420 @@ hr {
   top: 297px;
   left: 1256px;
 }
+.cena_tovara {
+  border: 1px solid #e8e8e9;
+  border-radius: 6px;
+  padding: 20px;
+}
 .old_cena {
   text-align: start;
   font-family: Roboto;
   font-size: 14px;
   color: #8e8e93;
   text-decoration: line-through;
+  font-weight: 700;
+  margin: 0px;
 }
-.new_cena{
+.new_cena {
   text-align: start;
   font-family: Roboto;
   font-size: 24px;
-  color: #1E2022;
+  color: #1e2022;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.rassrochka {
+  text-align: start;
+  font-family: Roboto;
+  font-size: 12px;
+  margin-top: -20px;
+}
+.btn_korzina {
+  display: flex;
+  justify-content: left;
+  width: 224px;
+  height: 40px;
+  background-color: #f05757;
+  border-radius: 6px;
+  border: 0px;
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
   font-weight: 500;
+  padding: 12px 45px;
+}
+.bonus_tovara {
+  margin-top: 10px;
+  max-width: 264px;
+  width: 100%;
+  max-height: 129px;
+  height: 100%;
+  border: 1px solid #e8e8e9;
+  border-radius: 6px;
+
+  text-align: left;
+}
+.znak_voprosa_cena{
+  padding-left: 15px;
+}
+
+.bonus_tovara img {
+  margin-right: 6px;
+}
+.znak_voprosa_bonus_one {
+  margin-left: 20px;
+}
+.znak_voprosa_bonus_two {
+  padding-left: 50px;
+}
+.znak_voprosa_bonus_three {
+  padding-left: 32px;
+}
+.bonus_tovara span {
+  color: #f05757;
+  font-weight: 500;
+  font-size: 12px;
+}
+.bonus_tovara p {
+  font-size: 12px;
+  font-family: Roboto;
+  color: #404040;
+  margin: 10px 20px 20px 20px;
+  font-weight: 500;
+}
+.poluch_zakaz {
+  margin-top: 10px;
+  max-width: 264px;
+  width: 100%;
+  max-height: 129px;
+  height: 100%;
+  border: 1px solid #e8e8e9;
+  border-radius: 6px;
+  text-align: left;
+}
+.poluch_zakaz p {
+  margin: 20px;
+  font-size: 12px;
+  font-family: Roboto;
+  color: #404040;
+  font-weight: 500;
+}
+.poluch_zakaz a {
+  text-decoration: none;
+  color: #f05757;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.tabs {
+  position: absolute;
+  top: 770px;
+}
+
+.phone_memory_klav input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs label {
+  display: inline-block;
+  font-family: Roboto;
+  padding-top: 6px;
+  font-size: 12px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0px;
+}
+
+.two_tabs_label,
+.three_tabs_label,
+.four_tabs_label,
+.five_tabs_label,
+.six_tabs_label,
+.seven_tabs_label {
+  margin-left: 40px;
+}
+.tabs label:hover {
+  border: 0px;
+  display: inline;
+  color: #f05757;
+  border-bottom: 1px solid #f05757;
+  transition: 0.4s;
+}
+
+.tabs input[type="radio"]:checked + label {
+  border: 0px;
+  display: inline;
+  text-align: left;
+  color: #f05757;
+  border-bottom: 1px solid #f05757;
+  transition: 0.4s;
+}
+
+.o_tovare {
+  margin-top: -170px;
+  max-width: 740px;
+  width: 100%;
+  text-align: start;
+  font-family: Roboto;
+}
+.o_tovare h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e2022;
+}
+.o_tovare p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.o_tovare span {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#more {
+  display: none;
+}
+#readmore_btn {
+  background: none;
+  border: 0px;
+  color: #3191d0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: -5px;
+}
+#readmore_btn:hover {
+  text-decoration: underline;
+}
+
+.otzivi_bottom {
+  margin-top: 40px;
+  max-width: 950px;
+  width: 100%;
+  font-family: "Roboto";
+  text-align: left;
+}
+.zagl_otzivi_bottom {
+  font-weight: 700;
+  font-size: 24px;
+}
+.otziv_name {
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e2022;
+}
+.otziv_date {
+  padding-left: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8e8e93;
+}
+.otzivi_bottom_cifr {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f05757;
+}
+.otzivi_bottom_dostoinstva p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1e2022;
+}
+.otzivi_bottom_dostoinstva span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #404040;
+}
+.otzivi_bottom_nedostatki p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1e2022;
+}
+.otzivi_bottom_nedostatki span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #404040;
+}
+
+.otzivi_bottom_dopolnitelno p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1e2022;
+}
+.otzivi_bottom_dopolnitelno span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #404040;
+}
+.otzivi_na_otzivi {
+  display: inline;
+  margin-top: 20px;
+}
+.otzivi_na_otzivi button {
+  background: none;
+  border: 0px;
+}
+.otzivi_na_otzivi img {
+  padding-top: 5px;
+}
+
+.like_active_text {
+  font-weight: 700;
+  font-size: 14px;
+  color: #f05757;
+  padding-bottom: 5px;
+}
+.dislike_btn {
+  margin-left: 20px;
+}
+.dislike_text {
+  font-weight: 700;
+  font-size: 14px;
+  color: #8e8e93;
+}
+.otzivi_na_otzivi button {
+  color: #3191d0;
+  font-weight: 500;
+  font-size: 14px;
+}
+.otzivi_na_otzivi button:hover {
+  text-decoration: underline;
+}
+
+.nedavno_smotreli {
+  font-family: Roboto;
+}
+.zagl_nedavno_smotreli {
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1e2022;
+}
+.nedavno_smotreli_tovari {
+  display: flex;
+  justify-content: center;
+}
+.nedavno_smorteli_one,
+.nedavno_smorteli_two,
+.nedavno_smorteli_three,
+.nedavno_smorteli_four {
+  text-align: left;
+  max-width: 265px;
+  width: 100%;
+}
+.nedavno_smorteli_two,
+.nedavno_smorteli_three,
+.nedavno_smorteli_four {
+  margin-left: 20px;
+}
+.nazv_tovar_nedavno_smotreli {
+  font-weight: 400;
+  font-size: 14px;
+  color: #1e2022;
+}
+.under_star_otziv {
+  font-weight: 500;
+  font-size: 14px;
+  color: #f05757;
+}
+.under_otziv_text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #8e8e93;
+}
+.old_cena_under {
+  font-weight: 500;
+  font-size: 14px;
+  color: #8e8e93;
+  text-decoration: line-through;
+}
+.new_cena_under {
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e2022;
+  margin-top: -20px;
+}
+.cena_under {
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e2022;
+  margin-top: 25px;
+}
+.btn_under {
+  margin-top: -30px;
+}
+.send_korzina {
+  width: 80px;
+  height: 40px;
+  background-color: #f05757;
+  border: none;
+  border-radius: 6px;
+}
+.like_under {
+  background: none;
+  border: none;
+}
+.sravn_under {
+  background: none;
+  border: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  background-color: #1e2022;
+  max-width: 1920px;
+  width: 100%;
+  max-height: 551px;
+  height: 100%;
+  font-family: Roboto;
+}
+table {
+  max-width: 1120px;
+  width: 100%;
+}
+
+.under_footer {
+  display: flex;
+  justify-content: center;
+}
+.zagl__footer {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+footer table {
+  margin-top: 30px;
+}
+.socseti {
+  position: absolute;
+  top: 2300px;
+  left: 1260px;
+}
+.socseti a img {
+  margin: 20px;
+  padding: 5px;
+}
+.socseti img {
+  margin: 20px;
+}
+
+footer td {
+  padding-top: 20px;
+}
+footer table a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #8e8e93;
+  text-decoration: none;
+}
+footer table a:hover {
+  text-decoration: underline;
 }
