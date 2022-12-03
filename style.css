@@ -614,7 +614,7 @@ hr {
 
   text-align: left;
 }
-.znak_voprosa_cena{
+.znak_voprosa_cena {
   padding-left: 15px;
 }
 
@@ -670,6 +670,7 @@ hr {
   position: absolute;
   top: 770px;
 }
+
 
 .phone_memory_klav input[type="radio"] {
   display: none;
@@ -736,6 +737,7 @@ hr {
   font-size: 14px;
   font-weight: 400;
 }
+
 #more {
   display: none;
 }

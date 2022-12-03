@@ -40,3 +40,4 @@ function readmore() {
     moreText.style.display = "inline";
   }
 }
+
