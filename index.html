@@ -94,26 +94,26 @@
             <img src="/images/iphone13(1).png" width="100%">
             </div>
             <div class="image fade">
-            <img src="/images/iphone13(2).jpg" height="315px">
+            <img src="/images/iphone13(2).jpg" height="100%">
             </div>
             <div class="image fade">
-            <img src="/images/iphone13(3).jpg" height="315px">
+            <img src="/images/iphone13(3).jpg" height="100%">
             </div>
             <div class="image fade">
-              <img src="/images/iphone13(4).jpg" height="315px">
+              <img src="/images/iphone13(4).jpg" height="100%">
               </div>
-              <div class="image fade">
-                <img src="/images/iphone13(5).jpg" height="315px">
+            <div class="image fade">
+                <img src="/images/iphone13(5).jpg" height="100%">
                 </div>
             
             <a id="prev" onclick="show_slide(-1)"></a>
             <a id="next" onclick="show_slide(1)"></a>
             
             <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            </div>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              </div>
             
             
             <script src="script.js"></script>
@@ -242,7 +242,8 @@
         <div class="cena_tovara">
           <p class="old_cena">79 990</p>
           <p class="new_cena">77 990 ₽</p>
-          <p class="rassrochka">Рассрочка от 3 334 ₽/месяц</p>
+          <p class="rassrochka">Рассрочка от 3 334 ₽/месяц
+             <img class="znak_voprosa_rassrochka" src="/images/znak_voprosa.png" alt=""></p>
           <button class="btn_korzina">Добавить в корзину</button>
         </div>
         <div class="bonus_tovara">
@@ -416,16 +417,21 @@
                        классный телефон, не жалею о покупке. </span>
         </div>
        <div class="otzivi_na_otzivi">
-       
-          <button><img src="/images/like_active.png" alt=""></button>
+        
+          <div class="margin_top">
+          <button id="like_comment" ></button>
         <span class="like_active_text">12</span>
        
        
-          <button class="dislike_btn"><img src="/images/dislike.png" alt=""></button>
+          <button id="dislike_comment" class="dislike_btn"></button>
         <span class="dislike_text">2</span>
         <button>Комментировать</button>
+      </div>
        </div> 
       </div>
+       </div> 
+      
+       
       <div class="nedavno_smotreli">
         <p class="zagl_nedavno_smotreli">Вы недавно смотрели</p>
         <div class="nedavno_smotreli_tovari">
@@ -485,81 +491,95 @@
           <button class="like_under"><img src="/images/like_under.png" alt=""></button>
           <button class="sravn_under"><img src="/images/sravn_under.png" alt=""></button>
         </div>
+        
         </div>
+        
+        <img class="btn_img_under_right" src="/images/right_btn_img.png" alt="">
+        
       </div>
+      
+      </div>
+      
+    </div>
+  </div>
+    <footer>
+      
+        <div class="ghz">
+      <div class="footer_container">
+        
+          
+        <div class="footer_o_kompanii">
+          <div class="logo_under">
+            
+            <object  type="image/svg+xml" data="/images/Logo.svg">
+              <img  src="logo.png" alt="LOGO" />
+            </object>
+          
+        </div>
+          <p class="zagl_footer_one">О компании
+             <img class="strelka_adaptiv" src="/images/strelka_vniz.png" alt="">
+            </p>
+          <ul class="footer__blocks">
+            <li class="footer__block"><a href="">Про ELECTRONICS</a></li>
+            <li class="footer__block"><a href="">Новости</a></li>
+            <li class="footer__block"><a href="">Партнёрам</a></li>
+            <li class="footer__block"><a href="">Вакансии</a></li>
+            <li class="footer__block"><a href="">Политика конфидециальности</a></li>
+            <li class="footer__block"><a href="">Персональные данные</a></li>
+            <li class="footer__block"><a href="">Правила продаж</a></li>
+            <li class="footer__block"><a href="">Сервисные центры</a></li>
+        </ul>
+        </div>
+        <div class="footer_for_buyers">
+          <p class="footer__buy">Покупателям
+            <img class="strelka_adaptiv" src="/images/strelka_vniz.png" alt="">
+
+          </p>
+          <ul class="footer__blocks">
+              <li class="footer__block"><a href="">Как оформить заказ</a></li>
+              <li class="footer__block"><a href="">Способы оплаты</a></li>
+              <li class="footer__block"><a href="">Кредиты</a></li>
+              <li class="footer__block"><a href="">Доставка</a></li>
+              <li class="footer__block"><a href="">Статус заказа</a></li>
+              <li class="footer__block"><a href="">Обмен, возврат, гарантия</a></li>
+              <li class="footer__block"><a href="">Проверка статуса ремонта</a></li>
+          </ul>
+      </div>
+      <div class="footer_no_name">
+        <ul class="footer__blocks">
+          <li class="footer__block"><a href="">Юридическим лицам</a></li>
+          <li class="footer__block"><a href="">Проверка счёта</a></li>
+          <li class="footer__block"><a href="">Корпоративные отделы</a></li>
+          <li class="footer__block"><a href="">Подарочные карты</a></li>
+          <li class="footer__block"><a href="">Бонусная программа</a></li>
+          <li class="footer__block"><a href="">Помощь</a></li>
+          <li class="footer__block"><a href="">Обратная связь</a></li>
+      </ul>
+      </div>
+      <div class="footer_social_seti">
+        <p>Мы в соцсетях</p>
+        <a href="https://www.facebook.com/"><img src="/images/facebook.png" alt="" width="50px"></a>
+        <a href="https://www.twitter.com/"><img src="/images/twitter.png" alt="" width="50px"></a>
+        <a href="https://www.instagram.com/"><img src="/images/inst.png" alt="" width="50px"></a>
+        <a href="https://vk.com/"><img src="/images/vk.png" alt="" width="50px"></a>
       </div>
     </div>
-    <footer>
-        <table>
-          <tr>
-           
-            <td class="zagl__footer">О компании</td>
-            <td class="zagl__footer">Покупателям</td>
-            <td class="zagl__footer">&nbsp;</td>
-            <td class="zagl__footer">Мы в соцсетях</td>
-            
-          </tr>
-          <tr>
-            <td> <a href=""> Про ELECTRONICS </a></td>
-            <td><a href="">Как оформить заказ</a></td>
-            <td><a href="">Юридическем лицам</a></td>
-            <td>
-              
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Новости</a> </td>
-            <td><a href="">Способы оплаты</a></td>
-            <td><a href="">Проверка счёта</a></td>
-          </tr>
-          <tr>
-            <td><a href="">Партнёрам</a> </td>
-            <td><a href="">Кредиты</a></td>
-            <td><a href="">Корпоративные отделы</a></td>
-          </tr>
-          <tr>
-            <td><a href="">Вакансии</a> </td>
-            <td><a href="">Доставка</a></td>
-            <td><a href="">Подарочные карты</a></td>
-          </tr>
-          <tr>
-            <td><a href="">Политика конфидециальности</a> </td>
-            <td><a href="">Статус заказа</a></td>
-            <td><a href="">Бонусная программа</a></td>
-          </tr>
-          <tr>
-            <td><a href="">Персональные данные</a> </td>
-            <td><a href="">Обмен, возврат, гарантия</a></td>
-            <td><a href="">Помощь</a></td>
-          </tr>
-          <tr>
-            <td><a href="">Правила продаж</a> </td>
-            <td><a href="">Проверка статуса ремонта</a></td>
-            <td><a href="">Обратная связь</a></td>
-          </tr>
-          <tr>
-            <td><a href="">Сервисные центры</a></td>
-          </tr>
-          
-      </table>
-      <div class="socseti">
+  
+    <div class="bottom_footer_container">
+      <div class="water_marka">
+        <a href="">Copyright 2022</a>
         
-        <a href=""><img src="/images/facebook.png" alt="" width="10px"></a>
-        <a href=""><img src="/images/twitter.png" alt="" width="22px"></a>
-        <a href=""><img src="/images/inst.png" alt="" width="22px"></a>
-        <a href=""><img src="/images/vk.png" alt="" width="18px"></a>
       </div>
-      <!--<div class="under_footer">
-    </hr>
-    <div class="watermark">
-    <a href="">Copyright 2022</a>
+      <div class="polir_konf">
+        <a href="">Политика конфидециальности</a>
+        <a href="">Публичная оферта</a>
+        <a href="">Карта сайта</a>
+       </div>
+      
+    </div>
   </div>
-    <div class="info_futer">
-    <a href="">Политика конфидециальности</a>
-    <a href="">Публичная оферта</a>
-    <a href="">Карта сайта</a>
-  </div>
-</div> -->
+</div>
     </footer>
+   
   </body>
 </html>

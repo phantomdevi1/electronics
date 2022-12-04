@@ -269,6 +269,7 @@ hr {
   position: absolute;
   top: 45%;
   left: 21%;
+
   cursor: pointer;
   padding: 16px;
   color: var(--white-color);
@@ -278,11 +279,19 @@ hr {
   height: 30px;
   background: url(/images/btn_left.png) no-repeat;
 }
+#prev:hover {
+  margin-top: -10px;
+  margin-left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-image: url(/images/left_btn_img.png);
+}
 
 #next {
   position: absolute;
   top: 45%;
-  right: 56%;
+  right: 55.5%;
   cursor: pointer;
   padding: 16px;
   color: var(--white-color);
@@ -292,7 +301,15 @@ hr {
   height: 30px;
   background: url(/images/btn_right.png) no-repeat;
 }
-
+#next:hover {
+  position: absolute;
+  top: 44%;
+  right: 57.3%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-image: url(/images/right_btn_img.png);
+}
 .dots {
   margin: 0;
   margin-left: 25%;
@@ -300,6 +317,7 @@ hr {
 }
 
 .dot {
+  color: #ff3e3e;
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -404,6 +422,9 @@ hr {
   font-family: Roboto;
   text-decoration: none;
   color: #8e8e93;
+}
+.otziv_slov:hover {
+  color: #ff3e3e;
 }
 .heart {
   padding-left: 26px;
@@ -603,6 +624,10 @@ hr {
   font-weight: 500;
   padding: 12px 45px;
 }
+.btn_korzina:hover {
+  background-color: #ff3e3e;
+  transition: 0.3s;
+}
 .bonus_tovara {
   margin-top: 10px;
   max-width: 264px;
@@ -617,18 +642,31 @@ hr {
 .znak_voprosa_cena {
   padding-left: 15px;
 }
+.znak_voprosa_rassrochka {
+  margin-left: 10px;
+}
+.znak_voprosa_rassrochka:hover {
+  border-radius: 50%;
+  background-color: #f05757;
+}
 
 .bonus_tovara img {
   margin-right: 6px;
 }
 .znak_voprosa_bonus_one {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .znak_voprosa_bonus_two {
-  padding-left: 50px;
+  margin-left: 40px;
 }
 .znak_voprosa_bonus_three {
-  padding-left: 32px;
+  margin-left: 22px;
+}
+.znak_voprosa_bonus_one:hover,
+.znak_voprosa_bonus_two:hover,
+.znak_voprosa_bonus_three:hover {
+  border-radius: 50%;
+  background-color: #f05757;
 }
 .bonus_tovara span {
   color: #f05757;
@@ -670,7 +708,6 @@ hr {
   position: absolute;
   top: 770px;
 }
-
 
 .phone_memory_klav input[type="radio"] {
   display: none;
@@ -811,29 +848,51 @@ hr {
   font-weight: 400;
   font-size: 14px;
   color: #404040;
+  padding-bottom: 20px;
 }
 .otzivi_na_otzivi {
   display: inline;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .otzivi_na_otzivi button {
   background: none;
   border: 0px;
 }
-.otzivi_na_otzivi img {
-  padding-top: 5px;
+.otzivi_na_otzivi span {
+  margin-top: 20px;
 }
 
 .like_active_text {
+  margin-left: -10px;
   font-weight: 700;
   font-size: 14px;
   color: #f05757;
   padding-bottom: 5px;
 }
+#like_comment {
+  width: 20px;
+  height: 20px;
+  background: url(/images/like_active.png) no-repeat;
+}
+#like_comment:hover {
+  background: url(/images/like_active_active.png) no-repeat;
+}
+#dislike_comment {
+  width: 20px;
+  height: 20px;
+  background: url(/images/dislike.png) no-repeat;
+}
+#dislike_comment:hover {
+  background: url(/images/dislike_active.png) no-repeat;
+}
 .dislike_btn {
-  margin-left: 20px;
+  margin-left: 40px;
+}
+.margin_top {
+  margin-top: 20px;
 }
 .dislike_text {
+  margin-left: -10px;
   font-weight: 700;
   font-size: 14px;
   color: #8e8e93;
@@ -842,6 +901,7 @@ hr {
   color: #3191d0;
   font-weight: 500;
   font-size: 14px;
+  padding-left: 25px;
 }
 .otzivi_na_otzivi button:hover {
   text-decoration: underline;
@@ -855,6 +915,7 @@ hr {
   font-weight: 700;
   font-size: 24px;
   color: #1e2022;
+  margin-left: 370px;
 }
 .nedavno_smotreli_tovari {
   display: flex;
@@ -916,6 +977,10 @@ hr {
   border: none;
   border-radius: 6px;
 }
+.send_korzina:hover {
+  background-color: #ff3e3e;
+  transition: 0.3s;
+}
 .like_under {
   background: none;
   border: none;
@@ -925,6 +990,12 @@ hr {
   border: none;
 }
 
+.btn_img_under_right {
+  margin-top: 150px;
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -932,51 +1003,489 @@ footer {
   background-color: #1e2022;
   max-width: 1920px;
   width: 100%;
-  max-height: 551px;
-  height: 100%;
+  height: 600px;
+
   font-family: Roboto;
+  margin: 0px;
+  margin-top: 60px;
 }
-table {
+.footer_container {
   max-width: 1120px;
-  width: 100%;
+  margin: 0 auto;
+  max-height: 490px;
+  height: 100%;
+  display: flex;
+  margin-top: 30px;
+  border-bottom: 1px solid #404040;
 }
 
-.under_footer {
-  display: flex;
-  justify-content: center;
-}
-.zagl__footer {
+footer p {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
 }
-footer table {
-  margin-top: 30px;
-}
-.socseti {
-  position: absolute;
-  top: 2300px;
-  left: 1260px;
-}
-.socseti a img {
-  margin: 20px;
-  padding: 5px;
-}
-.socseti img {
-  margin: 20px;
-}
-
-footer td {
-  padding-top: 20px;
-}
-footer table a {
+footer a {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   color: #8e8e93;
   text-decoration: none;
 }
-footer table a:hover {
-  text-decoration: underline;
+footer li {
+  list-style-type: none;
+  margin-top: 20px;
+}
+footer ul {
+  padding-left: 0px;
+}
+.footer_o_kompanii {
+  margin-top: 30px;
+}
+.footer_o_kompanii,
+.footer_for_buyers {
+  margin-right: 60px;
+}
+.footer_no_name {
+  margin-right: 110px;
+  margin-top: 152px;
+}
+.footer_for_buyers,
+.footer_social_seti {
+  margin-top: 95px;
+}
+.zagl_footer_one {
+  margin-top: 50px;
+}
+
+.socseti {
+  position: absolute;
+  top: 2350px;
+  left: 1190px;
+}
+.socseti a img {
+  margin: 10px;
+}
+.socseti img {
+  margin: 20px;
+}
+.bottom_footer_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 30px auto;
+}
+.ghz {
+  display: block;
+}
+.polir_konf a {
+  margin: 0px 30px 0px 0px;
+}
+.zagl_footer_one img {
+  display: none;
+}
+.footer_for_buyers img {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    max-width: 1000px;
+    width: 100%;
+  }
+  .geolocation {
+    left: 20px;
+  }
+  .menu {
+    left: 182px;
+  }
+  .teh_phone {
+    left: 837px;
+  }
+  .logo {
+    left: 20px;
+  }
+  .catalog {
+    left: 199px;
+  }
+
+  .search input {
+    max-width: 279px;
+    width: 100%;
+    left: 355px;
+  }
+  .search button {
+    left: 599px;
+  }
+  .frame {
+    left: 670px;
+  }
+  .way {
+    margin-left: 20px;
+  }
+  .content {
+    margin-left: 20px;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    width: 640px;
+    height: 315px;
+    left: calc(50% - 430px / 2);
+    top: calc(50% - 315px / 2 - 14px);
+  }
+  #prev {
+    position: absolute;
+    top: 530px;
+    left: 30px;
+
+    cursor: pointer;
+    padding: 16px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    background: url(/images/btn_left.png) no-repeat;
+  }
+  #prev:hover {
+    margin-top: -9px;
+    margin-left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-image: url(/images/left_btn_img.png);
+  }
+
+  #next {
+    position: absolute;
+    top: 530px;
+    right: 330px;
+    cursor: pointer;
+    padding: 16px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    background: url(/images/btn_right.png) no-repeat;
+  }
+  #next:hover {
+    position: absolute;
+    top: 521px;
+    right: 365px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-image: url(/images/right_btn_img.png);
+  }
+
+  .heart {
+    padding-left: 120px;
+  }
+  .buy {
+    max-width: 264px;
+    width: 100%;
+    max-height: 460px;
+    height: 100%;
+    position: absolute;
+    top: 470px;
+    left: 725px;
+  }
+  .opisanie {
+    display: none;
+  }
+  .config_phone {
+    max-width: 350px;
+    width: 100%;
+    max-height: 360px;
+    height: 100%;
+    position: absolute;
+    top: 300px;
+    left: 650px;
+  }
+  .phone_color {
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 700px;
+    margin-right: 20px;
+  }
+  .phone_memory {
+    position: absolute;
+    margin-top: -545px;
+    margin-left: 700px;
+  }
+  .tabs {
+    position: absolute;
+    top: 950px;
+  }
+  .o_tovare {
+    margin-top: 100px;
+    max-width: 740px;
+    width: 100%;
+    text-align: start;
+    font-family: Roboto;
+  }
+  .zagl_nedavno_smotreli {
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1e2022;
+    margin-left: 0px;
+  }
+  .btn_img_under_right {
+    margin-top: 150px;
+    margin-left: -20px;
+    width: 30px;
+    height: 30px;
+  }
+  .logo_under {
+    border: none;
+  }
+  .footer__blocks {
+    display: none;
+  }
+  .footer_no_name {
+    display: none;
+  }
+  .footer_container {
+    display: block;
+    margin-bottom: 60px;
+    border-bottom: 60px;
+  }
+  .logo_under {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #404040;
+    max-width: 1000px;
+    width: 107%;
+  }
+  .zagl_footer_one {
+    max-width: 1000px;
+    width: 107%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #404040;
+  }
+  .footer_for_buyers {
+    margin-top: 0px;
+    border-bottom: 1px solid #404040;
+    max-width: 1000px;
+    width: 100%;
+  }
+  .footer_social_seti {
+    margin-top: 0px;
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid #404040;
+  }
+  .footer_social_seti img {
+    margin-right: 20px;
+  }
+  .bottom_footer_container {
+    justify-content: space-between;
+    margin-top: -70px;
+  }
+ 
+  .zagl_footer_one img {
+    display: block;
+    margin-left: 560px;
+  }
+  .footer_for_buyers img {
+    display: block;
+    margin-left: 560px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header {
+    max-width: 360px;
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .teh_phone {
+    display: none;
+  }
+  .catalog {
+    display: none;
+  }
+  .frame {
+    display: none;
+  }
+  .logo {
+    top: 10px;
+    left: 12px;
+  }
+  .geolocation {
+    top: 30px;
+    left: 280px;
+  }
+  hr {
+    display: none;
+  }
+  .search input {
+    left: 20px;
+    max-width: 320px;
+    width: 100%;
+  }
+  .search button {
+    left: 300px;
+  }
+  .way {
+    display: none;
+  }
+  .content {
+    margin-left: 20px;
+  }
+  .tovar_name {
+    text-align: left;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    width: 317px;
+    height: 223px;
+    left: calc(50% - 430px / 2);
+    top: calc(50% - 315px / 2 - 14px);
+  }
+  #prev {
+    position: absolute;
+    top: 400px;
+    left: 20px;
+
+    cursor: pointer;
+    padding: 16px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    background: url(/images/btn_left.png) no-repeat;
+  }
+  #prev:hover {
+    margin-top: -9px;
+    margin-left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-image: url(/images/left_btn_img.png);
+  }
+
+  #next {
+    position: absolute;
+    top: 400px;
+    left: 322px;
+    cursor: pointer;
+    padding: 16px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    background: url(/images/btn_right.png) no-repeat;
+  }
+  #next:hover {
+    position: absolute;
+    top: 391px;
+    left: 307px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-image: url(/images/right_btn_img.png);
+  }
+  .config_phone {
+    left: 0px;
+    top: 550px;
+  }
+  .phone_color {
+    left: -690px;
+    top: 1180px;
+  }
+  .phone_memory {
+    left: -690px;
+    top: 1180px;
+  }
+  .buy {
+    left: 20px;
+    top: 710px;
+  }
+  .bonus_tovara {
+    display: none;
+  }
+  .poluch_zakaz {
+    display: none;
+  }
+  .tabs {
+    top: 890px;
+    left: 20px;
+    display: inline-flex;
+    text-align: start;
+  }
+
+  .o_tovare {
+    margin-top: 320px;
+  }
+  #dislike_comment {
+    margin-left: 20px;
+  }
+  .nedavno_smotreli_tovari {
+    display: inline-flex;
+  }
+  .btn_img_under_right {
+    margin-left: -550px;
+  }
+  footer {
+    max-width: 360px;
+    width: 100%;
+    min-height: 700px;
+  }
+  .footer_container {
+    max-width: 360px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .bottom_footer_container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: -130px;
+  }
+  .polir_konf {
+    display: flex;
+    flex-direction: column;
+  }
+  .polir_konf a {
+    margin-top: 20px;
+  }
+  .logo_under {
+    width: 115%;
+  }
+  .zagl_footer_one {
+    width: 115%;
+  }
+  .footer_for_buyers {
+    width: 96%;
+  }
+  .footer_social_seti {
+    width: 96%;
+  }
+}
+
+
+.zagl_footer_one img {
+  display: block;
+  margin-left: 300px;
+}
+.footer_for_buyers img {
+  display: block;
+  margin-left: 300px;
+}
+.water_marka {
+  display: contents;
 }
