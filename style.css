@@ -1090,7 +1090,7 @@ footer ul {
 
 @media screen and (max-width: 1000px) {
   header {
-    max-width: 1000px;
+    max-width: 1005px;
     width: 100%;
   }
   .geolocation {
@@ -1184,7 +1184,7 @@ footer ul {
   }
 
   .heart {
-    padding-left: 120px;
+    padding-left: 70px;
   }
   .buy {
     max-width: 264px;
@@ -1205,7 +1205,7 @@ footer ul {
     height: 100%;
     position: absolute;
     top: 300px;
-    left: 665px;
+    left: 680px;
   }
 
   .phone_color {
@@ -1299,6 +1299,262 @@ footer ul {
     margin-left: 560px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  header {
+    max-width: 501px;
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .teh_phone {
+    display: none;
+  }
+  .catalog {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .frame {
+    display: none;
+  }
+  .geolocation {
+    left: 420px;
+    top: 25px;
+  }
+  .logo {
+    left: 15px;
+    top: 10px;
+  }
+  .search input {
+    left: 30px;
+    max-width: 450px;
+    width: 100%;
+  }
+  .search button {
+    left: 440px;
+  }
+  .way {
+    display: none;
+  }
+  .content {
+    max-width: 470px;
+    width: 100%;
+  }
+  .tovar_name {
+    left: 0px;
+    text-align: left;
+  }
+  .fade {
+    width: 450px;
+    height: 350px;
+  }
+  #prev {
+    top: 450px;
+    left: 15px;
+  }
+  #next {
+    top: 450px;
+    left: 455px;
+  }
+  #next:hover {
+    top: 440px;
+    left: 440px;
+    width: 10px;
+    height: 10px;
+  }
+  .config_phone {
+    text-align: left;
+    max-width: 450px;
+    width: 100%;
+    left: 20px;
+    top: 650px;
+  }
+  .heart {
+    margin-left: 170px;
+  }
+
+  .phone_color {
+    margin-left: 0px;
+    margin-top: -120px;
+  }
+  .phone_memory {
+    margin-left: 0px;
+    margin-top: -70px;
+  }
+  .buy {
+    left: 25px;
+    top: 810px;
+    max-width: 450px;
+    width: 100%;
+  }
+  .btn_korzina {
+    width: 410px;
+    justify-content: center;
+  }
+  .bonus_tovara {
+    display: none;
+  }
+  .poluch_zakaz {
+    display: none;
+  }
+  .o_tovare {
+    margin-top: 250px;
+  }
+  .tabs {
+    margin-top: 40px;
+    display: inline-flex;
+    text-align: left;
+    margin-left: -230px;
+  }
+  .one_tabs_label {
+    width: 70px;
+  }
+  .nedavno_smotreli_tovari {
+    display: inline-flex;
+    justify-content: start;
+  }
+  .btn_img_under_right {
+    margin-left: -400px;
+  }
+  footer {
+    max-width: 520px;
+    width: 100%;
+    height: 700px;
+  }
+  .ghz {
+    margin-left: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .bottom_footer_container {
+    flex-direction: column;
+    margin-top: -100px;
+  }
+  .polir_konf {
+    display: flex;
+    flex-direction: column;
+  }
+  .polir_konf a {
+    margin-top: 20px;
+  }
+  .footer_for_buyers {
+    width: 95%;
+  }
+  .footer_social_seti {
+    width: 95%;
+  }
+  .zagl_footer_one img {
+    display: block;
+    margin-left: 450px;
+  }
+  .footer__buy img {
+    display: block;
+    margin-left: 450px;
+  }
+  .nedavno_smorteli_three {
+    display: none;
+  }
+  .nedavno_smorteli_four {
+    display: none;
+  }
+  .five_tabs_label {
+    visibility: hidden;
+  }
+  .six_tabs_label {
+    visibility: hidden;
+  }
+  .seven_tabs_label {
+    visibility: hidden;
+  }
+  .zagl_footer_one img {
+    display: block;
+    margin-left: 350px;
+  }
+  .footer__buy img {
+    display: block;
+    margin-left: 350px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  header {
+    max-width: 414px;
+    width: 100%;
+  }
+  .search input {
+    max-width: 350px;
+    width: 100%;
+  }
+  .geolocation {
+    left: 320px;
+  }
+  .search button {
+    left: 340px;
+  }
+  .logo {
+    left: 15px;
+  }
+  .content {
+    max-width: 380px;
+    width: 100%;
+  }
+
+  .fade {
+    width: 350px;
+    height: 250px;
+  }
+  #prev {
+    top: 400px;
+    left: 30px;
+  }
+  #next {
+    top: 400px;
+    left: 365px;
+  }
+  #next:hover {
+    top: 390px;
+    left: 350px;
+    width: 10px;
+    height: 10px;
+  }
+  .config_phone {
+    top: 580px;
+  }
+  .heart {
+    margin-left: 100px;
+  }
+  .phone_color {
+    margin-top: -70px;
+  }
+  .phone_memory {
+    margin-top: -20px;
+  }
+  .buy {
+    top: 750px;
+    max-width: 360px;
+  }
+  .btn_korzina {
+    width: 320px;
+  }
+  .tabs {
+    margin-top: 0;
+    margin-left: -190px;
+  }
+  .four_tabs_label {
+    visibility: hidden;
+  }
+
+  .o_tovare {
+    margin-top: 330px;
+  }
+  .btn_img_under_right {
+    margin-left: -200px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   header {
     max-width: 360px;
@@ -1400,20 +1656,33 @@ footer ul {
     background-image: url(/images/right_btn_img.png);
   }
   .config_phone {
-    left: 0px;
+    left: 15px;
     top: 550px;
   }
+  .heart {
+    margin-left: 70px;
+  }
   .phone_color {
-    left: -690px;
-    top: 1180px;
+    left: 15px;
+    top: 700px;
   }
   .phone_memory {
-    left: -690px;
-    top: 1180px;
+    left: 15px;
+    top: 700px;
   }
   .buy {
     left: 20px;
     top: 710px;
+    max-width: 264px;
+    width: 100%;
+    max-height: 460px;
+    height: 100%;
+    position: absolute;
+  }
+  .btn_korzina {
+    display: flex;
+    justify-content: left;
+    width: 224px;
   }
   .bonus_tovara {
     display: none;
@@ -1422,23 +1691,31 @@ footer ul {
     display: none;
   }
   .tabs {
-    top: 890px;
+    top: 870px;
     left: 20px;
     display: inline-flex;
     text-align: start;
+    margin-left: 0px;
   }
 
   .o_tovare {
     margin-top: 320px;
+    max-width: 330px;
+    width: 100%;
+  }
+  .otzivi_bottom {
+    max-width: 330px;
+    width: 100%;
   }
   #dislike_comment {
     margin-left: 20px;
   }
   .nedavno_smotreli_tovari {
     display: inline-flex;
+    justify-content: start;
   }
   .btn_img_under_right {
-    margin-left: -550px;
+    margin-left: -810px;
   }
   footer {
     max-width: 360px;
