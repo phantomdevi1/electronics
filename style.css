@@ -1083,9 +1083,11 @@ footer ul {
 }
 .zagl_footer_one img {
   display: none;
+  
 }
 .footer_for_buyers img {
   display: none;
+  
 }
 
 @media screen and (max-width: 1000px) {
