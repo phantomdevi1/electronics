@@ -408,7 +408,7 @@ hr {
   height: 100%;
   position: absolute;
   top: 300px;
-  left: 800px;
+  left: 810px;
 }
 
 .otziv_chisl {
@@ -427,7 +427,7 @@ hr {
   color: #ff3e3e;
 }
 .heart {
-  padding-left: 26px;
+  padding-left: 45px;
 }
 .sravnen_content {
   padding-left: 23px;
@@ -1083,11 +1083,9 @@ footer ul {
 }
 .zagl_footer_one img {
   display: none;
-  
 }
 .footer_for_buyers img {
   display: none;
-  
 }
 
 @media screen and (max-width: 1000px) {
@@ -1207,8 +1205,9 @@ footer ul {
     height: 100%;
     position: absolute;
     top: 300px;
-    left: 650px;
+    left: 665px;
   }
+
   .phone_color {
     position: absolute;
     margin-top: -600px;
@@ -1290,7 +1289,7 @@ footer ul {
     justify-content: space-between;
     margin-top: -70px;
   }
- 
+
   .zagl_footer_one img {
     display: block;
     margin-left: 560px;
@@ -1477,17 +1476,15 @@ footer ul {
   .footer_social_seti {
     width: 96%;
   }
-}
-
-
-.zagl_footer_one img {
-  display: block;
-  margin-left: 300px;
-}
-.footer_for_buyers img {
-  display: block;
-  margin-left: 300px;
-}
-.water_marka {
-  display: contents;
+  .zagl_footer_one img {
+    display: block;
+    margin-left: 300px;
+  }
+  .footer_for_buyers img {
+    display: block;
+    margin-left: 300px;
+  }
+  .water_marka {
+    display: contents;
+  }
 }
