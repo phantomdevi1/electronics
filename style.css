@@ -1296,6 +1296,10 @@ footer ul {
     width: 30px;
     height: 30px;
   }
+  .nedavno_smotreli {
+    
+    margin-left: 0px;
+  }
   .logo_under {
     border: none;
   }
