@@ -51,7 +51,7 @@ hr {
   position: absolute;
   width: 72px;
   height: 19px;
-  left: 400px;
+  left: 415px;
   top: 15px;
 }
 
@@ -61,6 +61,9 @@ hr {
   font-size: 16px;
 }
 .strelochka__geo {
+  position: absolute;
+  top: 4px;
+  left: -15px;
   width: 10.18px;
   height: 13px;
 }
@@ -76,7 +79,7 @@ hr {
 
   position: absolute;
   left: 580px;
-  top: 65px;
+  top: 68px;
   opacity: 0.3;
   border: 1px solid #8e8e93;
   border-radius: 6px;
@@ -103,7 +106,7 @@ hr {
 
 .search_input {
   position: absolute;
-  top: 65px;
+  top: 68px;
   left: 736px;
 }
 
@@ -226,12 +229,22 @@ hr {
 
   font-family: Roboto;
 }
+.way span{
+  font-size: 16px;
+  color: #8e8e93;
+  
+}
 .way_glav,
 .way_catalog,
 .way_smartphone {
   font-size: 16px;
   color: #8e8e93;
   text-decoration: none;
+}
+.way_glav:hover,
+.way_catalog:hover,
+.way_smartphone:hover{
+  text-decoration: underline;
 }
 
 .tovar {
@@ -427,10 +440,21 @@ hr {
   color: #ff3e3e;
 }
 .heart {
-  padding-left: 45px;
+  margin-left: 35px;
+  padding-left: 25px;
+  background: url(/images/heart.png) no-repeat;
+}
+.heart:hover{
+  width: 15px;
+  background: url(/images/heart_active.png) no-repeat;
 }
 .sravnen_content {
-  padding-left: 23px;
+  padding-left: 20px;
+  margin-left: 23px;
+  background: url(/images/sravnen.png) no-repeat;
+}
+.sravnen_content:hover{
+  background: url(/images/sravnen_active.png) no-repeat;
 }
 .phone_color {
   position: absolute;
@@ -532,12 +556,25 @@ hr {
   margin-left: 10px;
 }
 
+.color_one:hover,
+.color_two:hover,
+.color_three:hover,
+.color_four:hover,
+.color_five:hover{
+  outline: 2px solid #1e2022;
+}
+
 .phone_memory_klav input[type="radio"]:checked + label {
   height: 29px;
   width: 61px;
   border: 2px solid white;
   border-radius: 6px;
   box-sizing: border-box;
+  outline: 2px solid #1e2022;
+}
+.memory_one:hover,
+.memory_two:hover,
+.memory_three:hover{
   outline: 2px solid #1e2022;
 }
 
@@ -909,13 +946,14 @@ hr {
 
 .nedavno_smotreli {
   font-family: Roboto;
+  margin-left: 50px;
 }
 .zagl_nedavno_smotreli {
   text-align: left;
   font-weight: 700;
   font-size: 24px;
   color: #1e2022;
-  margin-left: 370px;
+  margin-left: 335px;
 }
 .nedavno_smotreli_tovari {
   display: flex;
@@ -982,12 +1020,26 @@ hr {
   transition: 0.3s;
 }
 .like_under {
-  background: none;
+  
+  margin-left: 15px;
+  height: 20px;
+  width: 25px;
+  background: url(/images/heart.png) no-repeat;
   border: none;
+  
+}
+.like_under:hover{
+  
+  background: url(/images/heart_active.png) no-repeat;
 }
 .sravn_under {
-  background: none;
+  height: 20px;
+  width: 25px;
+  background: url(/images/sravnen.png) no-repeat;
   border: none;
+}
+.sravn_under:hover{
+  background: url(/images/sravnen_active.png) no-repeat;
 }
 
 .btn_img_under_right {
@@ -1219,6 +1271,7 @@ footer ul {
     margin-top: -545px;
     margin-left: 700px;
   }
+
   .tabs {
     position: absolute;
     top: 950px;
@@ -1409,6 +1462,7 @@ footer ul {
     text-align: left;
     margin-left: -230px;
   }
+
   .one_tabs_label {
     width: 70px;
   }
@@ -1555,6 +1609,61 @@ footer ul {
   }
 }
 
+@media screen and (max-width: 375px) {
+  header {
+    max-width: 375px;
+    width: 100%;
+  }
+  .logo {
+    left: 10px;
+  }
+  .search input {
+    left: 20px;
+    max-width: 340px;
+    width: 100%;
+  }
+  .search button {
+    left: 320px;
+  }
+  .geolocation {
+    left: 300px;
+  }
+  .content {
+    max-width: 350px;
+    width: 100%;
+  }
+  #next {
+    left: 350px;
+  }
+  #next:hover {
+    left: 333px;
+  }
+  .heart {
+    margin-left: 80px;
+  }
+  .phone_color {
+    margin-top: -55px;
+  }
+  .phone_memory {
+    margin-top: -5px;
+  }
+  .buy {
+    max-width: 330px;
+  }
+  .btn_korzina {
+    width: 285px;
+  }
+  .tabs {
+    margin-left: -175px;
+  }
+  .footer__buy img {
+    margin-left: 320px;
+  }
+  .zagl_footer_one img {
+    margin-left: 320px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   header {
     max-width: 360px;
@@ -1664,11 +1773,11 @@ footer ul {
   }
   .phone_color {
     left: 15px;
-    top: 700px;
+    top: 630px;
   }
   .phone_memory {
     left: 15px;
-    top: 700px;
+    top: 640px;
   }
   .buy {
     left: 20px;
@@ -1691,7 +1800,7 @@ footer ul {
     display: none;
   }
   .tabs {
-    top: 870px;
+    top: 900px;
     left: 20px;
     display: inline-flex;
     text-align: start;
@@ -1714,8 +1823,11 @@ footer ul {
     display: inline-flex;
     justify-content: start;
   }
+  .nedavno_smotreli {
+    display: grid;
+  }
   .btn_img_under_right {
-    margin-left: -810px;
+    margin-left: -120px;
   }
   footer {
     max-width: 360px;
