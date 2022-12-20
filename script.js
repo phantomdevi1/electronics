@@ -20,7 +20,6 @@ index = images.length - 1;
 
 images[index].style.display = "block";
 dots[index].className += " active";
-
 }
 
 window.addEventListener("onload", show_slide(index));
@@ -40,4 +39,5 @@ function readmore() {
     moreText.style.display = "inline";
   }
 }
+
 

@@ -270,119 +270,230 @@
       </div>
 
       <div class="tabs">
-        <input 
-        type="radio"
-         id="one_tabs"
-          name="radio"
-           value="1"
-            checked>
-        <label 
-        for="one_tabs"
-         class="one_tabs_label"
-         >О товаре</label>
-        <input 
-        type="radio"
-         id="two_tabs"
-          name="radio"
-           value="2">
-        <label 
-        for="two_tabs"
-         class="two_tabs_label"
-         >Характеристики</label>
-        <input 
-        type="radio"
-         id="three_tabs"
-          name="radio"
-           value="3">
-        <label 
-        for="three_tabs"
-         class="three_tabs_label"
-         >Аксессуары</label>
-        <input 
-        type="radio"
-         id="four_tabs"
-          name="radio"
-           value="4">
-        <label 
-        for="four_tabs"
-         class="four_tabs_label"
-         >Услуги</label>
-        <input 
-        type="radio"
-         id="five_tabs"
-          name="radio"
-           value="5">
-        <label 
-        for="five_tabs"
-         class="five_tabs_label"
-         >Обзоры</label>
-         <input 
-        type="radio"
-         id="six_tabs"
-          name="radio"
-           value="6">
-        <label 
-        for="six_tabs"
-         class="six_tabs_label"
-         >Отзывы</label>
-         <input 
-        type="radio"
-         id="seven_tabs"
-          name="radio"
-           value="7">
-        <label 
-        for="seven_tabs"
-         class="seven_tabs_label"
-         >Документация</label>
+        <ul class="tabs_list">
+          <li class="tabs_item"><button class="tabs_btn tabs_btn--active" data-tabs-path="o_tovare">О товаре</button></li>
+          <li class="tabs_item"><button class="tabs_btn"  data-tabs-path="harakteristiki">Характеристики</button></li>
+          <li class="tabs_item"><button class="tabs_btn"  data-tabs-path="aksessuari">Аксессуары</button></li>
+          <li class="tabs_item"><button class="tabs_btn"  data-tabs-path="uslugi">Услуги</button></li>
+          <li class="tabs_item"><button class="tabs_btn"  data-tabs-path="obzori">Обзоры</button></li>
+          <li class="tabs_item"><button class="tabs_btn"  data-tabs-path="otzivi">Отзывы</button></li>
+          <li class="tabs_item"><button class="tabs_btn"  data-tabs-path="documentac">Документация</button></li>
+        </ul>
+        <div class="tabs_content tabs_content--active" data-tabs-target="o_tovare">
+          <div class="content_tabs">
+            <div class="o_tovare"
+            id="content_o_tovare"
+            >
+              <h2>Описание</h2>
+              <p class="swap_text">iPhone 13. Сильный мира всего. <br><br>
+      
+                iPhone 13. Самая совершенная система двух
+                 камер на iPhone. Режим «Киноэффект» делает
+                  из видео настоящее кино. Супербыстрый чип
+                   A15 Bionic. Неутомимый аккумулятор.
+                   Прочный корпус. И ещё более яркий дисплей
+                    Super Retina XDR. <br><br>
+                
+                Основные характеристики <br><br>
+                · Дисплей Super Retina XDR 6,1 дюйма1; <br><br>
+                · Режим «Киноэффект» автоматически переводит
+                 фокус между объектами при съёмке видео
+                  и создаёт красивый эффект размытия; <br><br>
+                · Передовая система двух камер 12 Мп
+                 (широкоугольная и сверхширокоугольная);
+                  Фотографические стили, Smart HDR 4, 
+                  Ночной режим, съёмка HDR-видео 4K в
+                   стандарте Dolby Vision;
+                   <span id="dots">...</span>
+                   <span id="more">
+                    iPhone 13. Сильный мира всего. <br><br>
+      
+                iPhone 13. Самая совершенная система двух
+                 камер на iPhone. Режим «Киноэффект» делает
+                  из видео настоящее кино. Супербыстрый чип
+                   A15 Bionic. Неутомимый аккумулятор.
+                   Прочный корпус. И ещё более яркий дисплей
+                    Super Retina XDR. <br><br>
+                
+                Основные характеристики <br><br>
+                · Дисплей Super Retina XDR 6,1 дюйма1; <br><br>
+                · Режим «Киноэффект» автоматически переводит
+                 фокус между объектами при съёмке видео
+                  и создаёт красивый эффект размытия; <br><br>
+                · Передовая система двух камер 12 Мп
+                 (широкоугольная и сверхширокоугольная);
+                  Фотографические стили, Smart HDR 4, 
+                  Ночной режим, съёмка HDR-видео 4K в
+                   стандарте Dolby Vision;
+                   
+                  </span>
+                   </p>
+                   <button onclick="readmore()" id="readmore_btn">Читать полностью</button>
+            </div>
+        </div>          
+        </div>
+
+        <div class="tabs_content" data-tabs-target="harakteristiki">
+          <div class="content_tabs">
+          <h2 class="content_title">
+            Все характеристики
+          </h2>
+          <div class="tabs_content_descr">
+
+            <h3>Заводские характеристики</h3>
+            <ol>
+              <li>Гарантия<div></div><span>1 год</span></li>
+              <li>Гарантия предоставляется<div></div><span>продавцом</span></li>
+              <li>Страна<div></div><span>Китай</span></li>
+            </ol>
+
+            <h3>Серия модели</h3>
+            <ol>
+              <li>Серия<div></div><span>iPhone 13</span></li>
+              <li>Модель<div></div><span>MLP03</span></li>
+            </ol>
+
+            <h3>Операционная система</h3>
+            <ol>
+              <li>Операционная система<div></div><span>IOS</span></li>
+            </ol>
+            
+            <h3>Экран</h3>
+            <ol>
+              <li>Экран<div></div><span>6.1"/2532x1170 Пикс</span></li>
+              <li>Диагональ<div></div><span>6.1 "</span></li>
+              <li>Технология экрана<div></div><span>OLED</span></li>
+              <li>Тип экрана<div></div><span>Super Retina XDR</span></li>
+              <li>Яркость<div></div><span>1200 кд/кв.м</span></li>
+            </ol>
+
+            <h3>Процессор</h3>
+            <ol>
+              <li>Тип процессора<div></div><span>A15 Bionic</span></li>
+            </ol>
+
+            <h3>Встроенная память</h3>
+            <ol>
+              <li>Встроенная память (ROM)<div></div><span>128 ГБ</span></li>
+            </ol>
+
+            <h3>Фронтальная камера</h3>
+            <ol>
+              <li>Количество фронтальных камер<div></div><span>1 шт</span></li>
+              <li>Фронтальная камера МПикс<div></div><span>12</span></li>
+            </ol>
+
+            <h3>SIM карта</h3>
+            <ol>
+              <li>SIM карта<div></div><span>nano-SIM/eSim</span></li>
+              <li>Поддержка eSIM<div></div><span>Да</span></li>
+            </ol>
+
+            <h3>Передача данных</h3>
+            <ol>
+              <li>Поддержка стандартов<div></div><span>2G/3G/4G LTE/5G</span></li>
+              <li>Поддержка Wi-Fi<div></div><span>ax</span></li>
+              <li>Технология NFC<div></div><span>Да</span></li>
+              <li>Встроенный модуль Bluetooth<div></div><span>5</span></li>
+            </ol>
+
+            <h3>Функции</h3>
+            <ol>
+              <li>Поддержка GPS<div></div><span>Да</span></li>
+              <li>Поддержка ГЛОНАСС<div></div><span>Да</span></li>
+              <li>Поддержка Apple Pay<div></div><span>Да</span></li>
+              <li>Цифровой компас<div></div><span>Да</span></li>
+              <li>Встроенный барометр<div></div><span>Да</span></li>
+              <li>Датчик ориентации экрана<div></div><span>Да</span></li>
+            </ol>
+            
+            <h3>Безопасность</h3>
+            <ol>
+              <li>Сенсор распознавания лица<div></div><span>Да</span></li>
+            </ol>
+
+            <h3>Интерфейсы</h3>
+            <ol>
+              <li>Порт USB<div></div><span>Lightning</span></li>
+            </ol>
+
+            <h3>Корпус</h3>
+            <ol>
+              <li>Материал корпуса<div></div><span>Ceramic Shield/ стекло/ алюминий</span></li>
+              <li>Степень защиты<div></div><span>IP68</span></li>
+              <li>Погружение в воду на глубину<div></div><span>6 м</span></li>
+            </ol>
+            
+            <h3>Комплектация</h3>
+            <ol>
+              <li>Кабель Lightning - Type-C<div></div><span>Да</span></li>
+            </ol>
+
+            <h3>Электропитание</h3>
+            <ol>
+              <li>Поддержка беспроводной зарядки<div></div><span>Да</span></li>
+              <li>Поддержка быстрой зарядки<div></div><span>Да</span></li>
+              <li>Поддержка MagSafe<div></div><span>Да</span></li>
+              <li>Мощность блока питания<div></div><span>20 Вт</span></li>
+              <li>Тип аккумулятора<div></div><span>Li-Ion</span></li>
+            </ol>
+
+            <h3>Цвет</h3>
+            <ol>
+              <li>Цвет<div></div><span>темная ночь</span></li>
+            </ol>
+          
+          </div>
+        </div>
       </div>
 
-      <div class="o_tovare">
-        <h2>Описание</h2>
-        <p class="swap_text">iPhone 13. Сильный мира всего. <br><br>
-
-          iPhone 13. Самая совершенная система двух
-           камер на iPhone. Режим «Киноэффект» делает
-            из видео настоящее кино. Супербыстрый чип
-             A15 Bionic. Неутомимый аккумулятор.
-             Прочный корпус. И ещё более яркий дисплей
-              Super Retina XDR. <br><br>
+        <div class="tabs_content" data-tabs-target="aksessuari">
+          <div class="content">
+          <h2 class="content_title">
+            Аксессуары
+          </h2>
           
-          Основные характеристики <br><br>
-          · Дисплей Super Retina XDR 6,1 дюйма1; <br><br>
-          · Режим «Киноэффект» автоматически переводит
-           фокус между объектами при съёмке видео
-            и создаёт красивый эффект размытия; <br><br>
-          · Передовая система двух камер 12 Мп
-           (широкоугольная и сверхширокоугольная);
-            Фотографические стили, Smart HDR 4, 
-            Ночной режим, съёмка HDR-видео 4K в
-             стандарте Dolby Vision;
-             <span id="dots">...</span>
-             <span id="more">
-              iPhone 13. Сильный мира всего. <br><br>
-
-          iPhone 13. Самая совершенная система двух
-           камер на iPhone. Режим «Киноэффект» делает
-            из видео настоящее кино. Супербыстрый чип
-             A15 Bionic. Неутомимый аккумулятор.
-             Прочный корпус. И ещё более яркий дисплей
-              Super Retina XDR. <br><br>
-          
-          Основные характеристики <br><br>
-          · Дисплей Super Retina XDR 6,1 дюйма1; <br><br>
-          · Режим «Киноэффект» автоматически переводит
-           фокус между объектами при съёмке видео
-            и создаёт красивый эффект размытия; <br><br>
-          · Передовая система двух камер 12 Мп
-           (широкоугольная и сверхширокоугольная);
-            Фотографические стили, Smart HDR 4, 
-            Ночной режим, съёмка HDR-видео 4K в
-             стандарте Dolby Vision;
-             
-            </span>
-             </p>
-             <button onclick="readmore()" id="readmore_btn">Читать полностью</button>
+          <p class="tabs_content_descr">
+            Хочется написать что-то плохое, ведь лучший аксессуар для iPhone, это Android
+          </p>
+        </div>
       </div>
+
+      <div class="tabs_content" data-tabs-target="uslugi">
+        <div class="content">
+        <h2 class="content_title">
+          Услуги
+        </h2>
+        <p class="tabs_content_descr">
+          За такую цену, может многое :)
+        </p>
+      </div>
+    </div>
+
+    <div class="tabs_content"  data-tabs-target="obzori">
+      <div class="content">
+      <h2 class="content_title">
+        Обзоры
+      </h2>
+      <iframe 
+        width="560"
+        height="315"
+        
+        src="https://www.youtube.com/embed/Cm8k-cr5r6Y"
+        title="YouTube video player" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      
+    </div>
+  </div>
+
+
+    </div>
+    <script src="tabs.js"></script>
+
+      
       <div class="otzivi_bottom">
         <p class="zagl_otzivi_bottom">Популярный отзыв</p>
         <p class="otziv_name">Антон <span class="otziv_date">7 ноября 2021</span></p>

@@ -25,8 +25,9 @@ hr {
   position: absolute;
   width: 565px;
   height: 19px;
-  left: 677px;
+  left: 620px;
   top: 15px;
+  font-weight: 500;
 }
 .nav__link {
   padding-left: 30px;
@@ -46,6 +47,7 @@ hr {
   color: #8e8e93;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 500;
 }
 .geolocation {
   position: absolute;
@@ -246,7 +248,9 @@ hr {
 .way_smartphone:hover{
   text-decoration: underline;
 }
-
+.main__photo{
+  max-width: 370px;
+}
 .tovar {
   max-width: 1140px;
   width: 100%;
@@ -458,7 +462,7 @@ hr {
 }
 .phone_color {
   position: absolute;
-  margin-top: -630px;
+  margin-top: -420px;
   margin-left: 480px;
   margin-right: 20px;
 }
@@ -522,7 +526,7 @@ hr {
 
 .phone_memory {
   position: absolute;
-  margin-top: -580px;
+  margin-top: -370px;
   margin-left: 480px;
 }
 .phone_memory_text {
@@ -741,56 +745,89 @@ hr {
   font-size: 12px;
 }
 
-.tabs {
-  position: absolute;
-  top: 770px;
+.tabs {  
+  width: 1120px;
+  margin-top: 62px ;
 }
+.tabs_content{
+  margin-top: 30px;
+  justify-content: left;
+}
+.tabs_content h2{
+  font-family: Roboto;
+  text-align: left;
+}
+.tabs ul{
+  margin-left: -80px;
+}
+.tabs button{
+  font-family: Roboto;
+  background: none;
+  border: none;
+  padding-left: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tabs button:hover{
+  color: #F05757;
+  text-decoration: underline #F05757;
+}
+.tabs_content{
+  display: none;
+}
+.tabs_content--active{
+  display: block;
+}
+.tabs_content_descr{
+  font-family: Roboto;
+  color: #1e2022;
+  font-size: 14px;
+}
+.tabs_content_descr h3{
+  text-align: start;
+  font-size: 20px;
+}
+.tabs_content_descr li{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;  
+  color: #8e8e93;
+  margin-left: -40px;
+
+}
+.tabs_content_descr li span{
+  position: sticky;
+  justify-content: left;
+  color: #1e2022;
+}
+
+.tabs_content_descr li div{
+  flex: 1 0;
+  border-bottom: 1px dotted #9b9b9b;
+  height: 1em;
+  margin: 0 .4em;
+}
+.tabs_btn--active{
+  color: #F05757;
+  text-decoration: underline #F05757;
+}
+
 
 .phone_memory_klav input[type="radio"] {
   display: none;
 }
 
-.tabs input[type="radio"] {
-  display: none;
-}
-.tabs label {
-  display: inline-block;
-  font-family: Roboto;
-  padding-top: 6px;
-  font-size: 12px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  border: 0px;
+.tabs_list{
+  display: flex;
+  
+  list-style: none;
+  
 }
 
-.two_tabs_label,
-.three_tabs_label,
-.four_tabs_label,
-.five_tabs_label,
-.six_tabs_label,
-.seven_tabs_label {
-  margin-left: 40px;
-}
-.tabs label:hover {
-  border: 0px;
-  display: inline;
-  color: #f05757;
-  border-bottom: 1px solid #f05757;
-  transition: 0.4s;
-}
-
-.tabs input[type="radio"]:checked + label {
-  border: 0px;
-  display: inline;
-  text-align: left;
-  color: #f05757;
-  border-bottom: 1px solid #f05757;
-  transition: 0.4s;
-}
 
 .o_tovare {
-  margin-top: -170px;
+  margin-top: 40px;
   max-width: 740px;
   width: 100%;
   text-align: start;
@@ -821,10 +858,15 @@ hr {
   color: #3191d0;
   font-size: 14px;
   font-weight: 500;
-  margin-left: -5px;
+  margin-left: -40px;
 }
 #readmore_btn:hover {
   text-decoration: underline;
+}
+iframe{
+  border-radius: 10px;
+  display: flex;
+  justify-content: end;
 }
 
 .otzivi_bottom {
@@ -1262,7 +1304,7 @@ footer ul {
 
   .phone_color {
     position: absolute;
-    margin-top: -600px;
+    margin-top: -620px;
     margin-left: 700px;
     margin-right: 20px;
   }
