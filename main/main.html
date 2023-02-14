@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_width-1140px">
+      <nav class="header__navigation">
+        <div class="header__navigation-geo">
+          <img src="img/strelkageo.svg" alt="#">
+          <span id="tow">Город</span>
+        </div>
+
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#">Магазины</a></li>
+          <li class="header__menu-item"><a href="#">Покупателям</a></li>
+          <li class="header__menu-item"><a href="#">Юридическим лицам</a></li>
+          <li class="header__menu-item"><a href="#">Сервисный центр</a></li>
+        </ul>
+        <a href="tel:+74959743333" class="header__navigation-phone">8 (495) 974-33-33 </a>
+      </nav>
+    </div>
+    <div class="hr"></div>
+    <div class="header_width-1140px">
+      <div class="header__bottom">
+        <div class="logo__container">
+          <a href="" class="logo"><img src="img/Logo.svg" alt="#" class="logo__img"></a>
+        </div>
+        <div class="geo2 geo">
+          <img src="img/strelkageo.svg" alt="#">
+          <span id="tow">Город</span>
+        </div>
+        <div class="header__catalog" >
+          <button onclick="catalog_down()" class="accordion__catalog"> 
+            <img src="img/select_strelka.svg" alt="">
+            Каталог
+          </button>
+        </div>
+
+        <div class="header__search">
+          <input type="search" class="header__search-input" placeholder="Поиск по сайту">
+          <span class="header__search-icon">
+            <img src="img/lupa-poisk.svg" height="20px" width="20px" alt="#">
+          </span>
+        </div>
+        <ul class="menu">
+          <li><a href="/dimas/index.html" class="header__btns_bottom"><img src="img/Compare.svg" alt="#"><span >Сравнить</span>
+            </a></li>
+          <li><a href="" class="header__btns_bottom"><img src="img/Market.svg" alt="#"><span>Корзина</span></a></li>
+          <li><a href="" class="header__btns_bottom"><img src="img/Enter.svg" alt="#"><span>Войти</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="catalog" id="myDropdown">
+  <ul>
+    <li> <a href="">Смартфоны</a> </li>
+    <li><a href="">Приставки</a></li>
+    <li><a href="">Телевизоры</a></li>
+  </ul>
+  <ul>
+    <li> <a href="">Ноутбуки</a> </li>
+    <li><a href="">Планшеты</a></li>
+    <li><a href="">Часы</a></li>
+  </ul>
+  <ul>
+    <li> <a href="">Комплекткющие для пк</a> </li>
+    <li><a href="">Столы</a></li>
+    <li><a href="">Очки</a></li>
+  </ul>
+  <ul>
+    <li> <a href="">Кофеварки</a> </li>
+    <li><a href="">Гриль</a></li>
+    <li><a href="">Вафельницы</a></li>
+  </ul>
+  <ul>
+    <li> <a href="">Стиральные машины</a> </li>
+    <li><a href="">Посудомойки</a></li>
+    <li><a href="">Микроволновки</a></li>
+  </ul>
+  
+  </div>
+
+  <div class="content">
+    <div class="content__width-1140px">
+      <div class="content__rekomend">
+        <div class="main__photo">
+          
+          <div class="image fade">            
+          <img src="/main/img/slider_photo_one.svg" alt="">
+          </div>
+          <div class="image fade">
+          <img src="/main/img/slider_photo_two.jpg">
+          </div>
+          <div class="image fade">
+          <img src="/main/img/slider_photo_three.jpg" height="100%">
+          </div>
+          <div class="image fade">
+            <img src="/main/img/slider_photo_four.jpg" height="100%">
+            </div>
+          <div class="image fade">
+              <img src="/main/img/slider_photo_five.jpg" height="100%">
+            </div>         
+            <a id="prev" onclick="show_slide(-1)"></a>
+            <a id="next" onclick="show_slide(1)"></a>                 
+          </div>
+          <div class="tovar_rek fade">
+            <div class="tovar__photo">
+              <img src="/main/img/rtx.svg" alt="" width="180px" height="190px">              
+            </div>
+            <div class="tovar__name">
+              Видеокарта Palit GeForce RTX 3090 TI GameRock
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">299 990</div>
+              <div class="new__cena">274 999 ₽</div>
+              <div class="tovar__pokupka">
+                
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+
+          <div class="tovar_rek fade">
+            <div class="tovar__photo"> 
+              <img src="/main/img/13pro.png" alt="" width="180px" height="190px">             
+            </div>
+            <div class="tovar__name">
+              23.5" Моноблок Apple iMac 24" 2021 г. MGTF3RU/A
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">149 999</div>
+              <div class="new__cena">134 999 ₽</div>
+              <div class="tovar__pokupka">
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+
+          <div class="tovar_rek fade">
+            <div class="tovar__photo"> 
+              <img src="/main/img/thunderobot.jpg" alt="" width="180px" height="190px">             
+            </div>
+            <div class="tovar__name">
+              Системный блок игровой Thunderobot BW III Pro D
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">109 999</div>
+              <div class="new__cena">89 999 ₽</div>
+              <div class="tovar__pokupka">
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+
+          <div class="tovar_rek fade">
+            <div class="tovar__photo"> 
+              <img src="/main/img/imac.jfif" alt="" width="180px" height="190px">             
+            </div>
+            <div class="tovar__name">
+              23.5" Моноблок Apple iMac 24" 2021 г. MGTF3RU/A
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">320 000</div>
+              <div class="new__cena">270 000 ₽</div>
+              <div class="tovar__pokupka">
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+
+          <div class="tovar_rek fade">
+            <div class="tovar__photo"> 
+              <img src="/main/img/tecno.jpg" alt="" width="180px" height="190px">             
+            </div>
+            <div class="tovar__name">
+              Смартфон Tecno PHANTOM X2 Pro (AD9 12/256GB Mars Orange)
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">65 999</div>
+              <div class="new__cena">55 999 ₽</div>
+              <div class="tovar__pokupka">
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+      </div>
+
+      <div class="popular__tovar">
+        <h2>Популярные товары</h2>
+
+        <div class="popular__tovar-slider">
+
+        <div class="popular__tovar-container first">
+          <div class="tovar__photo"> 
+            <img src="/main/img/pic1.png" alt="" width="180px" height="190px">             
+          </div>
+          <div class="tovar__name">
+            Кофемашина Philips EP1220/00 Series 1200
+          </div>
+          <div class="tovar__otziv">
+            <img src="/main/img/star.svg" alt="">
+            <a href="">4,5 <span> / 1 отзыв</span> </a>
+            <div class="old__cena">37 990</div>
+            <div class="new__cena">25 990 ₽</div>
+            <div class="tovar__pokupka">
+              <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+              <button class="tovar__like"></button>
+              <button class="tovar__sravnen"></button>
+            </div>              
+          </div>
+        </div>
+
+        <div class="popular__tovar-container">
+          <div class="tovar__photo"> 
+            <img src="/main/img/pic2.png" alt="" width="180px" height="190px">             
+          </div>
+          <div class="tovar__name">
+            Ноутбук HUAWEI MateBook D 15 BoD-WDH9 8+512GB Space Grey
+          </div>
+          <div class="tovar__otziv">
+            <img src="/main/img/star.svg" alt="">
+            <a href="">4,5 <span> / 1 отзыв</span> </a>
+            <div class="old__cena">69 990</div>
+            <div class="new__cena">63 990 ₽</div>
+            <div class="tovar__pokupka">
+              <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+              <button class="tovar__like"></button>
+              <button class="tovar__sravnen"></button>
+            </div>              
+          </div>
+        </div>
+
+        <div class="popular__tovar-container fade">
+          <div class="tovar__photo"> 
+            <img src="/main/img/pic3.png" alt="" width="180px" height="190px">             
+          </div>
+          <div class="tovar__name">
+            Смартфон Apple iPhone 11 128GB Black (MHDH3RU/A)
+          </div>
+          <div class="tovar__otziv">
+            <img src="/main/img/star.svg" alt="">
+            <a href="">4,5 <span> / 1 отзыв</span> </a>
+            <div class="new__cena not_old_cena">55 990 ₽</div>
+            <div class="tovar__pokupka">
+              <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+              <button class="tovar__like"></button>
+              <button class="tovar__sravnen"></button>
+            </div>              
+          </div>
+        </div>
+
+        <div class="popular__tovar-container">
+          <div class="tovar__photo"> 
+            <img src="/main/img/tecno.jpg" alt="" width="180px" height="190px">             
+          </div>
+          <div class="tovar__name">
+            Смартфон Tecno PHANTOM X2 Pro (AD9 12/256GB Mars Orange)
+          </div>
+          <div class="tovar__otziv">
+            <img src="/main/img/star.svg" alt="">
+            <a href="">4,5 <span> / 1 отзыв</span> </a>
+            <div class="old__cena">65 999</div>
+            <div class="new__cena">55 999 ₽</div>
+            <div class="tovar__pokupka">
+              <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+              <button class="tovar__like"></button>
+              <button class="tovar__sravnen"></button>
+            </div>              
+          </div>
+        </div>
+        <a id="next__popular" onclick="show_popular_tovar(1)"></a> 
+      </div>
+
+      <div class="popular__tovar-slider fade">
+            <a id="prev__popular" onclick="show_popular_tovar(-1)"></a>            
+        <div class="popular__tovar-container first">
+          <div class="tovar__photo"> 
+            <img src="/main/img/13.png" alt="" width="180px" height="190px">             
+          </div>
+          <div class="tovar__name">
+            Смартфон Apple iPhone 13 128GB Starlight
+          </div>
+          <div class="tovar__otziv">
+            <img src="/main/img/star.svg" alt="">
+            <a href="">4,5 <span> / 1 отзыв</span> </a>
+            <div class="old__cena">79 999</div>
+            <div class="new__cena">63 999 ₽</div>
+            <div class="tovar__pokupka">
+              <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+              <button class="tovar__like"></button>
+              <button class="tovar__sravnen"></button>
+            </div>              
+          </div>
+        </div>
+
+        <div class="popular__tovar-container">
+          <div class="tovar__photo"> 
+            <img src="/main/img/13pro.png" alt="" width="180px" height="190px">             
+          </div>
+          <div class="tovar__name">
+            Смартфон Apple iPhone 13 Pro Max 1TB Silver
+          </div>
+          <div class="tovar__otziv">
+            <img src="/main/img/star.svg" alt="">
+            <a href="">4,5 <span> / 1 отзыв</span> </a>
+            <div class="old__cena">149 999</div>
+            <div class="new__cena">136 999 ₽</div>
+            <div class="tovar__pokupka">
+              <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+              <button class="tovar__like"></button>
+              <button class="tovar__sravnen"></button>
+            </div>              
+          </div>
+        </div>
+
+        <div class="popular__tovar-container">
+          <div class="tovar__photo"> 
+            <img src="/main/img/i5_10600kf.png" alt="" width="180px" height="190px">             
+          </div>
+          <div class="tovar__name">
+            Процессор Intel Core i5-10600KF OEM LGA 1200
+          </div>
+          <div class="tovar__otziv">
+            <img src="/main/img/star.svg" alt="">
+            <a href="">4,5 <span> / 1 отзыв</span> </a>
+            <div class="old__cena">20 000</div>
+            <div class="new__cena">15 999 ₽</div>
+            <div class="tovar__pokupka">
+              <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+              <button class="tovar__like"></button>
+              <button class="tovar__sravnen"></button>
+            </div>              
+          </div>
+        </div>
+
+        <div class="popular__tovar-container">
+          <div class="tovar__photo"> 
+            <img src="/main/img/iphone14.png" alt="" width="180px" height="190px">             
+          </div>
+          <div class="tovar__name">
+            Смартфон Apple iPhone 14 Pro Max 128GB Space Black (Dual Sim)
+          </div>
+          <div class="tovar__otziv">
+            <img src="/main/img/star.svg" alt="">
+            <a href="">4,5 <span> / 1 отзыв</span> </a>
+            <div class="old__cena">129 999</div>
+            <div class="new__cena">121 999 ₽</div>
+            <div class="tovar__pokupka">
+              <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+              <button class="tovar__like"></button>
+              <button class="tovar__sravnen"></button>
+            </div>              
+          </div>
+        </div>
+      </div>
+    
+      <div class="brends">
+        <h2>Бренды</h2>
+        <div class="img__brends">
+          <div class="first_brend flex">
+          <a href=""><img class="first_brend" src="/main/img/brend1.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend2.svg" alt=""></a> 
+          <a href=""><img src="/main/img/brend3.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend4.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend5.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend6.svg" alt=""></a>
+        </div>
+        <div class="first_brend flex ">
+          <a href=""><img class="first_brend" src="/main/img/brend7.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend8.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend9.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend10.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend11.svg" alt=""></a>
+          <a href=""><img src="/main/img/brend12.svg" alt=""></a>
+        </div>
+        </div>
+      </div>
+
+      <div class="uspei__now">
+        <h2>Успей сейчас</h2>
+
+        <div class="uspei__now-slider">
+
+          <div class="uspei__now-container first">
+            <div class="tovar__photo"> 
+              <img src="/main/img/uspei1.svg" alt="" width="180px" height="190px">             
+            </div>
+            <div class="tovar__name">
+              Ноутбук Apple MacBook Pro 13 M1 8-core (8-core GPU)/8/256 Space...
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">119 990</div>
+              <div class="new__cena">87 990 ₽</div>
+              <div class="tovar__pokupka">
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+  
+          <div class="uspei__now-container">
+            <div class="tovar__photo"> 
+              <img src="/main/img/uspei2.svg" alt="" width="180px" height="190px">             
+            </div>
+            <div class="tovar__name">
+              Беспроводные наушники с микрофоном Apple AirPods 3-го...
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">16 990</div>
+              <div class="new__cena">12 990 ₽</div>
+              <div class="tovar__pokupka">
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+  
+          <div class="uspei__now-container fade">
+            <div class="tovar__photo"> 
+              <img src="/main/img/uspei3.svg" alt="" width="180px" height="190px">             
+            </div>
+            <div class="tovar__name">
+              Игра для PS4 CD-PROJEKT-RED Cyberpunk 2077
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">2 799</div>
+              <div class="new__cena">799 ₽</div>
+              <div class="tovar__pokupka">
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+  
+          <div class="uspei__now-container">
+            <div class="tovar__photo"> 
+              <img src="/main/img/uspei4.svg" alt="" width="180px" height="190px">             
+            </div>
+            <div class="tovar__name">
+              Смартфон Xiaomi 11 Lite 5G NE 256GB Peach Pink
+            </div>
+            <div class="tovar__otziv">
+              <img src="/main/img/star.svg" alt="">
+              <a href="">4,5 <span> / 1 отзыв</span> </a>
+              <div class="old__cena">39 990</div>
+              <div class="new__cena">34 990 ₽</div>
+              <div class="tovar__pokupka">
+                <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+                <button class="tovar__like"></button>
+                <button class="tovar__sravnen"></button>
+              </div>              
+            </div>
+          </div>
+          <a id="next__uspei" onclick="show_uspei_now(1)"></a> 
+        </div>
+
+        <div class="uspei__now-slider fade">
+          <a id="prev__uspei" onclick="show_uspei_now(-1)"></a>            
+      <div class="uspei__now-container first">
+        <div class="tovar__photo"> 
+          <img src="/main/img/13.png" alt="" width="180px" height="190px">             
+        </div>
+        <div class="tovar__name">
+          Смартфон Apple iPhone 13 128GB Starlight
+        </div>
+        <div class="tovar__otziv">
+          <img src="/main/img/star.svg" alt="">
+          <a href="">4,5 <span> / 1 отзыв</span> </a>
+          <div class="old__cena">79 999</div>
+          <div class="new__cena">63 999 ₽</div>
+          <div class="tovar__pokupka">
+            <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+            <button class="tovar__like"></button>
+            <button class="tovar__sravnen"></button>
+          </div>              
+        </div>
+      </div>
+
+      <div class="uspei__now-container">
+        <div class="tovar__photo"> 
+          <img src="/main/img/13pro.png" alt="" width="180px" height="190px">             
+        </div>
+        <div class="tovar__name">
+          Смартфон Apple iPhone 13 Pro Max 1TB Silver
+        </div>
+        <div class="tovar__otziv">
+          <img src="/main/img/star.svg" alt="">
+          <a href="">4,5 <span> / 1 отзыв</span> </a>
+          <div class="old__cena">149 999</div>
+          <div class="new__cena">136 999 ₽</div>
+          <div class="tovar__pokupka">
+            <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+            <button class="tovar__like"></button>
+            <button class="tovar__sravnen"></button>
+          </div>              
+        </div>
+      </div>
+
+      <div class="uspei__now-container">
+        <div class="tovar__photo"> 
+          <img src="/main/img/i5_10600kf.png" alt="" width="180px" height="190px">             
+        </div>
+        <div class="tovar__name">
+          Процессор Intel Core i5-10600KF OEM LGA 1200
+        </div>
+        <div class="tovar__otziv">
+          <img src="/main/img/star.svg" alt="">
+          <a href="">4,5 <span> / 1 отзыв</span> </a>
+          <div class="old__cena">20 000</div>
+          <div class="new__cena">15 999 ₽</div>
+          <div class="tovar__pokupka">
+            <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+            <button class="tovar__like"></button>
+            <button class="tovar__sravnen"></button>
+          </div>              
+        </div>
+      </div>
+
+      <div class="uspei__now-container">
+        <div class="tovar__photo"> 
+          <img src="/main/img/iphone14.png" alt="" width="180px" height="190px">             
+        </div>
+        <div class="tovar__name">
+          Смартфон Apple iPhone 14 Pro Max 128GB Space Black (Dual Sim)
+        </div>
+        <div class="tovar__otziv">
+          <img src="/main/img/star.svg" alt="">
+          <a href="">4,5 <span> / 1 отзыв</span> </a>
+          <div class="old__cena">129 999</div>
+          <div class="new__cena">121 999 ₽</div>
+          <div class="tovar__pokupka">
+            <button onclick="korzina()" class="tovar__korzina"><img src="/main/img/korzina.svg" alt=""></button>
+            <button class="tovar__like"></button>
+            <button class="tovar__sravnen"></button>
+          </div>              
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <footer class="footer">
+    <div class="footer__container">
+
+      <div class="logo-div">
+        <a href="" class="logo"><img src="img/Logo.svg" alt="#" class="logo__img"></a>
+      </div>
+      <div class="footer__container-flex">
+        <div class="footer__tab">
+          <div class="footer__tabs_container">
+            <div class="footer__tabs-header">О Компании <img class="footer__tabs-header-img"
+                src="img/strelka-footer.svg" alt="">
+            </div>
+            <div class="footer__tabs-body">
+              <p>Про ELECTRONICS</p>
+              <p>Новости</p>
+              <p>Партнерам</p>
+              <p>Вакансии</p>
+              <p>Политика конфиденциальности</p>
+              <p>Персональные данные</p>
+              <p>Правила продаж</p>
+              <p>Сервисные центры</p>
+            </div>
+            <div class="footer__tabs-header">Покупателям <img class="footer__tabs-header-img"
+                src="img/strelka-footer.svg" alt="">
+            </div>
+            <div class="footer__tabs-body">
+              <p>Как оформить заказ</p>
+              <p>Способы оплаты</p>
+              <p>Кредиты</p>
+              <p>Доставка</p>
+              <p>Статус заказа</p>
+              <p>Обмен, возврат, гарантия</p>
+              <p>Проверка статуса ремонта</p>
+              <p>Юридическим лицам</p>
+              <p>Проверка счета</p>
+              <p>Корпоративные отделы</p>
+              <p>Подарочные карты</p>
+              <p>Бонусная программа</p>
+              <p>Помощь </p>
+              <p>Обратная связь</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__tabs">
+          <div class="footer__tabs-header">
+            <div class="footer__tabs-header-item">
+              <p class="footer__tabs-header-text">
+                О Компании
+              </p>
+            </div>
+            <div class="footer__tabs-header-item">
+              <p class="footer__tabs-header-text">
+                Покупателям
+              </p>
+            </div>
+          </div>
+          <div class="footer__tabs-body">
+            <div class="footer__tabs-body-item">
+              <div class="footer__tabs-body-item">
+                <p>Про ELECTRONICS</p>
+                <p>Новости</p>
+                <p>Партнерам</p>
+                <p>Вакансии</p>
+                <p>Политика конфиденциальности</p>
+                <p>Персональные данные</p>
+                <p>Правила продаж</p>
+                <p>Сервисные центры</p>
+              </div>
+            </div>
+            <div class="footer__tabs-body-item flex">
+              <div class="footer__tabs-body-item-container_1">
+                <p>Как оформить заказ</p>
+                <p>Способы оплаты</p>
+                <p>Кредиты</p>
+                <p>Доставка</p>
+                <p>Статус заказа</p>
+                <p>Обмен, возврат, гарантия</p>
+                <p>Проверка статуса ремонта</p>
+              </div>
+              <div class="footer__tabs-body-item-container_2">
+                <p>Юридическим лицам</p>
+                <p>Проверка счета</p>
+                <p>Корпоративные отделы</p>
+                <p>Подарочные карты</p>
+                <p>Бонусная программа</p>
+                <p>Помощь </p>
+                <p>Обратная связь</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="footer__container-social">
+          <div class="footer__container-social-text">Мы в соцсетях</div>
+          <div class="footer__container-social-btns">
+            <div class="footer__container-social-btn"><a href=""><img src="img/facebook.svg" alt="#"></a>
+            </div>
+            <div class="footer__container-social-btn"><a href=""><img src="img/twitter.svg" alt="#"></a>
+            </div>
+            <div class="footer__container-social-btn"><a href=""><img class="img-width-22px" src="img/inst.svg"
+                  alt="#"></a></div>
+            <div class="footer__container-social-btn"><a href=""><img src="img/vk.svg" alt="#"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__container-2">
+      <div class="footer__container-2-copy">
+        <p>Copyright 2022</p>
+      </div>
+      <div class="footer__container-2-text">
+        <a href="">Политика конфиденциальности</a><a href="">Публичная оферта</a><a href="">Карта сайта</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!--выпадающий список каталога-->
+  <script>  
+function catalog_down(){
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+   window.onclick = function(event) {
+  if (!event.target.matches('.accordion__catalog')) {
+    var dropdowns = document.getElementsByClassName("catalog");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    
+  </script>
+
+  <!--верхний слайдер-->
+  <script>
+    var index = 0;
+
+    show_slide = (i) => {
+    index += i;
+
+    var images = document.getElementsByClassName("image");
+    var tovarrek = document.getElementsByClassName("tovar_rek");
+
+    for (i = 0; i < images.length; i++)
+    images[i].style.display = "none";
+
+    for (i = 0; i < tovarrek.length; i++)
+    tovarrek[i].style.display = "none";
+
+    if (index > images.length - 1)
+    index = 0 ;
+
+    if (index < 0)
+    index = images.length - 1;
+
+    if (index > tovarrek.length - 1)
+    index = 0 ;
+
+    if (index < 0)
+    index = tovarrek.length - 1;
+
+    images[index].style.display = "block";
+    tovarrek[index].style.display = "block";
+    }
+
+    window.addEventListener("onload", show_slide(index));
+ 
+  </script>
+
+<!--добавление в корзину-->
+  <script>
+    function korzina(){
+  alert("Товар добавлен в корзину");
+}
+  </script>
+
+  <!--слайдер популярных товаров-->
+  <script>
+    var index = 0;
+
+    show_popular_tovar = (i) => {
+    index += i;
+
+    var skip = document.getElementsByClassName("popular__tovar-slider");
+
+    for (i = 0; i < skip.length; i++)
+    skip[i].style.display = "none";
+
+
+    if (index > skip.length - 1)
+    index = 0 ;
+
+    if (index < 0)
+    index = skip.length - 1;
+
+    skip[index].style.display = "flex";
+    }
+
+    window.addEventListener("onload", show_popular_tovar(index));
+  </script>
+
+  <!--слайдер успей сейчас-->
+  <script>
+    var index = 0;
+
+    show_uspei_now = (i) => {
+    index += i;
+
+    var skip = document.getElementsByClassName("uspei__now-slider");
+
+    for (i = 0; i < skip.length; i++)
+    skip[i].style.display = "none";
+
+
+    if (index > skip.length - 1)
+    index = 0 ;
+
+    if (index < 0)
+    index = skip.length - 1;
+
+    skip[index].style.display = "flex";
+    }
+
+    window.addEventListener("onload", show_uspei_now(index));
+  </script>
+</body>
+</html>
