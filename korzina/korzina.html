@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="korzina.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_width-1140px">
+      <nav class="header__navigation">
+        <div class="header__navigation-geo">
+          <img src="img/strelkageo.svg" alt="#">
+          <span id="tow">Город</span>
+        </div>
+
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#">Магазины</a></li>
+          <li class="header__menu-item"><a href="#">Покупателям</a></li>
+          <li class="header__menu-item"><a href="#">Юридическим лицам</a></li>
+          <li class="header__menu-item"><a href="#">Сервисный центр</a></li>
+        </ul>
+        <a href="tel:+74959743333" class="header__navigation-phone">8 (495) 974-33-33 </a>
+      </nav>
+    </div>
+    <div class="hr"></div>
+    <div class="header_width-1140px">
+      <div class="header__bottom">
+        <div class="logo__container">
+          <a href="/main/main.html" class="logo"><img src="img/Logo.svg" alt="#" class="logo__img"></a>
+        </div>
+        <div class="geo2 geo">
+          <img src="img/strelkageo.svg" alt="#">
+          <span id="tow">Город</span>
+        </div>
+        <div class="header__catalog" >
+          <button onclick="catalog_down()" class="accordion__catalog"> 
+            <img src="img/select_strelka.svg" alt="">
+            Каталог
+          </button>
+        </div>
+
+        <div class="header__search">
+          <input type="search" class="header__search-input" placeholder="Поиск по сайту">
+          <span class="header__search-icon">
+            <img src="img/lupa-poisk.svg" height="20px" width="20px" alt="#">
+          </span>
+        </div>
+        <ul class="menu">
+          <li><a href="/dimas/index.html" class="header__btns_bottom"><img src="img/Compare.svg" alt="#"><span >Сравнить</span>
+            </a></li>
+          <li><a href="" class="header__btns_bottom"><img src="img/Market.svg" alt="#"><span>Корзина</span></a></li>
+          <li><a href="" class="header__btns_bottom"><img src="img/Enter.svg" alt="#"><span>Войти</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="catalog" id="myDropdown">
+    <ul>
+      <li> <a href="/smartphones/smartphones.html">Смартфоны</a> </li>
+      <li><a href="">Приставки</a></li>
+      <li><a href="">Телевизоры</a></li>
+    </ul>
+    <ul>
+      <li> <a href="">Ноутбуки</a> </li>
+      <li><a href="">Планшеты</a></li>
+      <li><a href="">Часы</a></li>
+    </ul>
+    <ul>
+      <li> <a href="">Комплекткющие для пк</a> </li>
+      <li><a href="">Столы</a></li>
+      <li><a href="">Очки</a></li>
+    </ul>
+    <ul>
+      <li> <a href="">Кофеварки</a> </li>
+      <li><a href="">Гриль</a></li>
+      <li><a href="">Вафельницы</a></li>
+    </ul>
+    <ul>
+      <li> <a href="">Стиральные машины</a> </li>
+      <li><a href="">Посудомойки</a></li>
+      <li><a href="">Микроволновки</a></li>
+    </ul>    
+    </div>
+
+
+    <div class="content">
+      <div class="content__zagl">
+      <h2>Моя корзина</h2>
+      <a href="" class="pechat__itogo">Печать</a>
+    </div>
+      <div class="tovar__in__korzina">
+      <div class="vivod__tovarov">
+       <div class="tovar">
+        <div class="tovar-img">
+          <img src="/korzina/img/iphone13white.svg" alt="">
+        </div>
+        <div class="tovar__opisanie">
+          <div class="tovar__opisanie-name">
+            <p>Смартфон Apple iPhone 13 128GB Starlight (MLNX3RU/A)
+            </p>
+            <span>77 990 ₽</span>            
+          </div>
+          <div class="block__button__tovar">
+            <div class="button-tovar">
+              <button class="favourites-tovar">В избранное</button>
+              <button class="delete-tovar">Удалить</button>
+            </div>
+            <div class="kolichestvo-tovar">
+              <button id="minus__kolich">-</button>
+              <span id="kolich_tovarov">1</span>
+              <button id="plus__kolich">+</button>
+            </div>
+          </div>
+
+          <div class="block__accordeon">
+            <div class="aksessuar__header">
+              <img src="/korzina/img/strelka_blue.svg" alt="">
+              Добавить необходимый аксессуар
+            </div>
+            
+
+            <div class="uslugi__header accordeon__header">
+              <img src="/korzina/img/strelka_blue.svg" alt="">
+              Выбрать услуги
+            </div>
+            <div class="uslugi__content accordeon__content">
+              <div class="padding accordeon__content">
+                <input type="checkbox">
+                Быстросервис для смартфонов 2 года
+                <span>
+                  15 999 ₽
+                </span>
+                <p>Подробнее</p>
+                <a href="">Полный список</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <div class="tovar">
+        <div class="tovar-img">
+          <img src="/korzina/img/iphone13korzina.svg" alt="">
+        </div>
+        <div class="tovar__opisanie">
+          <div class="tovar__opisanie-name">
+            <p>Смартфон Apple iPhone 13 128GB Midnight (MLNW3RU/A)
+            </p>
+            <span>77 990 ₽</span>            
+          </div>
+          <div class="block__button__tovar">
+            <div class="button-tovar">
+              <button class="favourites-tovar">В избранное</button>
+              <button class="delete-tovar">Удалить</button>
+            </div>
+            <div class="kolichestvo-tovar">
+              <button id="minus__kolich">-</button>
+              <span id="kolich_tovarov">1</span>
+              <button id="plus__kolich">+</button>
+            </div>
+          </div>
+
+          <div class="block__accordeon">
+            <div class="aksessuar__header">
+              <img src="/korzina/img/strelka_blue.svg" alt="">
+              Добавить необходимый аксессуар
+            </div>
+            
+
+            <div class="uslugi__header accordeon__header">
+              <img src="/korzina/img/strelka_blue.svg" alt="">
+              Выбрать услуги
+            </div>
+            <div class="uslugi__content accordeon__content">
+              <div class="padding accordeon__content">
+                <input type="checkbox">
+                Быстросервис для смартфонов 2 года
+                <span>
+                  15 999 ₽
+                </span>
+                <p>Подробнее</p>
+                <a href="">Полный список</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+      <div class="cena__itogo">
+        <div class="itogo__cena-oformlenie">
+          <p>Итого.................<span>155 980 ₽</span></p>
+          <button>Перейти к оформлению</button>
+        </div>
+        <div class="itogo__cena-bonus">
+          <ul>
+            <li><a> <img src="/korzina/img/money.svg" alt=""> <span>+ 1950</span> Бонусов при покупке</p></li>
+            <li><p> <img src="/korzina/img/procent.svg" alt="">Кредит от 3 161 ₽/мес</p></li>
+            <li><p> <img src="/korzina/img/procent.svg" alt=""> Рассрочка от 3 612 ₽/мес</p></li>
+          </ul>
+        </div>
+        <div class="itogo__cena-poluchenie">
+          <ul>
+            <li><p>Сопсобы получения заказа</p></li>
+            <li><a href="">Самовывоз</a> из 5 иагазинов завтра и
+               попозже, бесплатно</li>
+            <li><a href="">Доставка</a>Завтра, 490 ₽</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <footer class="footer">
+      <div class="footer__container">
+  
+        <div class="logo-div">
+          <a href="" class="logo"><img src="img/Logo.svg" alt="#" class="logo__img"></a>
+        </div>
+        <div class="footer__container-flex">
+          <div class="footer__tab">
+            <div class="footer__tabs_container">
+              <div class="footer__tabs-header">О Компании <img class="footer__tabs-header-img"
+                  src="img/strelka-footer.svg" alt="">
+              </div>
+              <div class="footer__tabs-body">
+                <p>Про ELECTRONICS</p>
+                <p>Новости</p>
+                <p>Партнерам</p>
+                <p>Вакансии</p>
+                <p>Политика конфиденциальности</p>
+                <p>Персональные данные</p>
+                <p>Правила продаж</p>
+                <p>Сервисные центры</p>
+              </div>
+              <div class="footer__tabs-header">Покупателям <img class="footer__tabs-header-img"
+                  src="img/strelka-footer.svg" alt="">
+              </div>
+              <div class="footer__tabs-body">
+                <p>Как оформить заказ</p>
+                <p>Способы оплаты</p>
+                <p>Кредиты</p>
+                <p>Доставка</p>
+                <p>Статус заказа</p>
+                <p>Обмен, возврат, гарантия</p>
+                <p>Проверка статуса ремонта</p>
+                <p>Юридическим лицам</p>
+                <p>Проверка счета</p>
+                <p>Корпоративные отделы</p>
+                <p>Подарочные карты</p>
+                <p>Бонусная программа</p>
+                <p>Помощь </p>
+                <p>Обратная связь</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__tabs">
+            <div class="footer__tabs-header">
+              <div class="footer__tabs-header-item">
+                <p class="footer__tabs-header-text">
+                  О Компании
+                </p>
+              </div>
+              <div class="footer__tabs-header-item">
+                <p class="footer__tabs-header-text">
+                  Покупателям
+                </p>
+              </div>
+            </div>
+            <div class="footer__tabs-body">
+              <div class="footer__tabs-body-item">
+                <div class="footer__tabs-body-item">
+                  <p>Про ELECTRONICS</p>
+                  <p>Новости</p>
+                  <p>Партнерам</p>
+                  <p>Вакансии</p>
+                  <p>Политика конфиденциальности</p>
+                  <p>Персональные данные</p>
+                  <p>Правила продаж</p>
+                  <p>Сервисные центры</p>
+                </div>
+              </div>
+              <div class="footer__tabs-body-item flex">
+                <div class="footer__tabs-body-item-container_1">
+                  <p>Как оформить заказ</p>
+                  <p>Способы оплаты</p>
+                  <p>Кредиты</p>
+                  <p>Доставка</p>
+                  <p>Статус заказа</p>
+                  <p>Обмен, возврат, гарантия</p>
+                  <p>Проверка статуса ремонта</p>
+                </div>
+                <div class="footer__tabs-body-item-container_2">
+                  <p>Юридическим лицам</p>
+                  <p>Проверка счета</p>
+                  <p>Корпоративные отделы</p>
+                  <p>Подарочные карты</p>
+                  <p>Бонусная программа</p>
+                  <p>Помощь </p>
+                  <p>Обратная связь</p>
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+          <div class="footer__container-social">
+            <div class="footer__container-social-text">Мы в соцсетях</div>
+            <div class="footer__container-social-btns">
+              <div class="footer__container-social-btn"><a href=""><img src="img/facebook.svg" alt="#"></a>
+              </div>
+              <div class="footer__container-social-btn"><a href=""><img src="img/twitter.svg" alt="#"></a>
+              </div>
+              <div class="footer__container-social-btn"><a href=""><img class="img-width-22px" src="img/inst.svg"
+                    alt="#"></a></div>
+              <div class="footer__container-social-btn"><a href=""><img src="img/vk.svg" alt="#"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__container-2">
+        <div class="footer__container-2-copy">
+          <p>Copyright 2022</p>
+        </div>
+        <div class="footer__container-2-text">
+          <a href="">Политика конфиденциальности</a><a href="">Публичная оферта</a><a href="">Карта сайта</a>
+        </div>
+      </div>
+  
+    </footer>
+
+<script>  
+function catalog_down(){
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+   window.onclick = function(event) {
+  if (!event.target.matches('.accordion__catalog')) {
+    var dropdowns = document.getElementsByClassName("catalog");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}   
+  </script>
+  
+  <script>
+    let current_rotation_1 = 180;
+    document.querySelectorAll('.accordeon__header').forEach((el) => {
+      el.addEventListener('click', () => {
+        let content = el.nextElementSibling;
+        let child = el.lastElementChild;
+        if (content.style.maxHeight == 0 + 'px') {
+          child.style.transform = 'rotate(' + 180 + 'deg)';
+          content.style.maxHeight = 109 + 'px';
+        } else {
+          child.style.transform = 'rotate(' + 0 + 'deg)';
+          content.style.maxHeight = 0 + 'px';
+        }
+      })
+    })
+  </script>
+  <script src="/localstorage.js"></script>
+</body>
+</html>

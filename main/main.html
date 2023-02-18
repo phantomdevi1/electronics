@@ -54,7 +54,7 @@
         <ul class="menu">
           <li><a href="/dimas/index.html" class="header__btns_bottom"><img src="img/Compare.svg" alt="#"><span >Сравнить</span>
             </a></li>
-          <li><a href="" class="header__btns_bottom"><img src="img/Market.svg" alt="#"><span>Корзина</span></a></li>
+          <li><a href="/korzina/korzina.html" class="header__btns_bottom"><img src="img/Market.svg" alt="#"><span>Корзина</span></a></li>
           <li><a href="" class="header__btns_bottom"><img src="img/Enter.svg" alt="#"><span>Войти</span></a>
           </li>
         </ul>
@@ -64,7 +64,7 @@
 
   <div class="catalog" id="myDropdown">
   <ul>
-    <li> <a href="">Смартфоны</a> </li>
+    <li> <a href="/smartphones/smartphones.html">Смартфоны</a> </li>
     <li><a href="">Приставки</a></li>
     <li><a href="">Телевизоры</a></li>
   </ul>
@@ -221,11 +221,11 @@
 
         <div class="popular__tovar-slider">
 
-        <div class="popular__tovar-container first">
+        <div class="popular__tovar-container first" id="tovar1">
           <div class="tovar__photo"> 
             <img src="/main/img/pic1.png" alt="" width="180px" height="190px">             
           </div>
-          <div class="tovar__name">
+          <div class="tovar__name" >
             Кофемашина Philips EP1220/00 Series 1200
           </div>
           <div class="tovar__otziv">
@@ -756,6 +756,12 @@ function catalog_down(){
 <!--добавление в корзину-->
   <script>
     function korzina(){
+     
+      var tovar = document.getElementById('tovar1');
+      console.log(tovar);
+      localStorage.setItem('2', tovar);
+      
+      
   alert("Товар добавлен в корзину");
 }
   </script>
@@ -809,5 +815,7 @@ function catalog_down(){
 
     window.addEventListener("onload", show_uspei_now(index));
   </script>
+  <script src="/localstorage.js"></script>
+  
 </body>
 </html>
